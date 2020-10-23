@@ -1,7 +1,16 @@
-const Device = () => {
+import React from 'react';
+
+const Device = (props) => {
+	const { name, type } = props;
 	return (
 		<>
-			<div>Device Info</div>
+			<h4>Device Info</h4>
+			<div>
+				<p>Device Name: {name}</p>
+				<br />
+				<p>Device Type: {type}</p>
+				<br />
+			</div>
 		</>
 	);
 };
